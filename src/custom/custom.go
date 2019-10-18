@@ -7,5 +7,5 @@ import (
 
 func CustomPrint(output ...interface{}) {
 	fmt.Print(output...)
-	time.Sleep(200 * time.Millisecond)
+	time.Sleep(150 * time.Millisecond)
 }
