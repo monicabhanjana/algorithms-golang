@@ -17,7 +17,7 @@ func BubbleSort() {
 		arr[i] = rand.Intn(100)
 	}
 
-	custom.CustomPrint("Randomly generated array:", arr, "\n")
+	custom.CustomPrint(time.Second, "Randomly generated array:", arr, "\n")
 	fmt.Println()
 
 	i := 0
@@ -25,7 +25,7 @@ func BubbleSort() {
 		j := 0
 		for j < SIZE-i-1 {
 			if arr[j] > arr[j+1] {
-				custom.CustomPrint("Swapping arr[", j, "] (", arr[j], ") and arr[", j+1, "] (", arr[j+1], ") \n")
+				custom.CustomPrint(150*time.Millisecond, "Swapping arr[", j, "] (", arr[j], ") and arr[", j+1, "] (", arr[j+1], ") \n")
 				arr[j], arr[j+1] = arr[j+1], arr[j]
 			}
 			j++
@@ -33,5 +33,5 @@ func BubbleSort() {
 		i++
 	}
 
-	custom.CustomPrint("\nSorted array:", arr, "\n")
+	custom.CustomPrint(time.Second, "\nSorted array:", arr, "\n")
 }

@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func CustomPrint(output ...interface{}) {
+func CustomPrint(sleepDuration time.Duration, output ...interface{}) {
 	fmt.Print(output...)
-	time.Sleep(150 * time.Millisecond)
+	time.Sleep(sleepDuration)
 }

@@ -1,12 +1,17 @@
 package main
 
 import (
+	"custom"
 	"fmt"
 	"sorting"
+	"time"
 )
 
 func main() {
-	fmt.Print("Welcome. \nPlease select an option: \n1) Sorting \n2) Searching \n\nEnter your choice: ")
+	fmt.Println("Welcome.")
+
+outerOptionsAgain:
+	fmt.Print("Please select an option: \n1) Sorting \n2) Searching \n\nEnter your choice: ")
 
 	var option int
 	fmt.Scan(&option)
@@ -14,6 +19,7 @@ func main() {
 
 	switch option {
 	case 1:
+	innerOptionsAgainSorting:
 		fmt.Print("a) Bubble Sort \nb) Selection Sort \n\nEnter your choice: ")
 
 		var option string
@@ -25,9 +31,11 @@ func main() {
 			sorting.BubbleSort()
 		case "b":
 		default:
-			fmt.Print("Invalid Choice! Please try again. \n\n")
+			custom.CustomPrint(time.Second, "Invalid Choice! Please try again. \n\n")
+			goto innerOptionsAgainSorting
 		}
 	case 2:
+	innerOptionsAgainSearching:
 		fmt.Print("a) Linear Search \nb) Binary Search \n\nEnter your choice: ")
 
 		var option string
@@ -38,9 +46,11 @@ func main() {
 		case "a":
 		case "b":
 		default:
-			fmt.Print("Invalid Choice! Please try again. \n\n")
+			custom.CustomPrint(time.Second, "Invalid Choice! Please try again. \n\n")
+			goto innerOptionsAgainSearching
 		}
 	default:
-		fmt.Print("Invalid Choice! Please try again. \n\n")
+		custom.CustomPrint(time.Second, "Invalid Choice! Please try again. \n\n")
+		goto outerOptionsAgain
 	}
 }
