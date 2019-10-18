@@ -1,6 +1,7 @@
 package sorting
 
 import (
+	"custom"
 	"fmt"
 	"math/rand"
 	"time"
@@ -16,7 +17,7 @@ func BubbleSort() {
 		arr[i] = rand.Intn(100)
 	}
 
-	fmt.Println("Randomly generated array:", arr)
+	custom.CustomPrint("Randomly generated array:", arr, "\n")
 	fmt.Println()
 
 	i := 0
@@ -24,7 +25,7 @@ func BubbleSort() {
 		j := 0
 		for j < SIZE-i-1 {
 			if arr[j] > arr[j+1] {
-				fmt.Print("Swapping arr[", j, "] (", arr[j], ") and arr[", j+1, "] (", arr[j+1], ") \n")
+				custom.CustomPrint("Swapping arr[", j, "] (", arr[j], ") and arr[", j+1, "] (", arr[j+1], ") \n")
 				arr[j], arr[j+1] = arr[j+1], arr[j]
 			}
 			j++
@@ -32,5 +33,5 @@ func BubbleSort() {
 		i++
 	}
 
-	fmt.Println("\nSorted array:", arr)
+	custom.CustomPrint("\nSorted array:", arr, "\n")
 }
