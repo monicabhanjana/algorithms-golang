@@ -2,15 +2,13 @@ package sorting
 
 import (
 	"custom"
-	"fmt"
 	"time"
 )
 
 func BubbleSort() {
 	var arr = custom.GenerateRandomArray()
 
-	custom.CustomPrint(time.Second, "Randomly generated array:", arr, "\n")
-	fmt.Println()
+	custom.CustomPrint(time.Second, "Randomly generated array:", arr, "\n\n")
 
 	i := 0
 	for i < len(arr) {
