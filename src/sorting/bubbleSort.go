@@ -1,4 +1,4 @@
-package main
+package sorting
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func main() {
+func BubbleSort() {
 	rand.Seed(time.Now().UTC().UnixNano())
 
 	const SIZE = 15
