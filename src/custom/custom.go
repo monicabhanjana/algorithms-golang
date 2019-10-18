@@ -6,18 +6,18 @@ import (
 	"time"
 )
 
-const SIZE = 15
+const ARRAY_SIZE = 15
 
 func CustomPrint(sleepDuration time.Duration, output ...interface{}) {
 	fmt.Print(output...)
 	time.Sleep(sleepDuration)
 }
 
-func GenerateRandomArray() [SIZE]int {
+func GenerateRandomArray() [ARRAY_SIZE]int {
 	rand.Seed(time.Now().UTC().UnixNano())
 
-	var arr [SIZE]int
-	for i := 0; i < SIZE; i++ {
+	var arr [ARRAY_SIZE]int
+	for i := 0; i < ARRAY_SIZE; i++ {
 		arr[i] = rand.Intn(100)
 	}
 
