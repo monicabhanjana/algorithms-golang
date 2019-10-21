@@ -20,7 +20,7 @@ func SelectionSort() {
 			}
 			j++
 		}
-		
+
 		if min != i {
 			custom.CustomPrint(150*time.Millisecond, "Swapping arr[", i, "] (", arr[i], ") and arr[", min, "] (", arr[min], ") \n")
 			arr[min], arr[i] = arr[i], arr[min]
