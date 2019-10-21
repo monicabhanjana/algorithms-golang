@@ -30,6 +30,7 @@ outerOptionsAgain:
 		case "a":
 			sorting.BubbleSort()
 		case "b":
+			sorting.SelectionSort()
 		default:
 			custom.CustomPrint(time.Second, "Invalid Choice! Please try again. \n\n")
 			goto innerOptionsAgainSorting
