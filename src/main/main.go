@@ -3,6 +3,7 @@ package main
 import (
 	"custom"
 	"fmt"
+	"searching"
 	"sorting"
 	"time"
 )
@@ -45,6 +46,7 @@ outerOptionsAgain:
 
 		switch option {
 		case "a":
+			searching.LinearSearch()
 		case "b":
 		default:
 			custom.CustomPrint(time.Second, "Invalid Choice! Please try again. \n\n")

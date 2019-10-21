@@ -8,7 +8,7 @@ import (
 func BubbleSort() {
 	var arr = custom.GenerateRandomArray()
 
-	custom.CustomPrint(time.Second, "Randomly generated array:", arr, "\n\n")
+	custom.CustomPrint(time.Second, "Randomly generated array: ", arr, "\n\n")
 
 	i := 0
 	for i < len(arr) {
@@ -23,5 +23,5 @@ func BubbleSort() {
 		i++
 	}
 
-	custom.CustomPrint(time.Second, "\nSorted array:", arr, "\n")
+	custom.CustomPrint(time.Second, "\nSorted array: ", arr, "\n")
 }
