@@ -37,5 +37,6 @@ func SelectionSort() {
 		i++
 	}
 
-	custom.CustomPrint(time.Second, "Sorted array: ", arr, "\n")
+	custom.CustomPrint(time.Second, "Sorted array: ", arr)
+	custom.CustomPrint(time.Second, "\nTime Complexity: O(n²)\n")
 }

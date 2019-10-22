@@ -10,7 +10,7 @@ func BubbleSort() {
 	var arr = custom.GenerateRandomArray()
 	var previous = false
 
-	custom.CustomPrint(time.Second, "Randomly generated array: ", arr, "\n\n")
+	custom.CustomPrint(time.Second, "Randomly generated array: ", arr, "\n")
 
 	i := 0
 	for i < len(arr) {
@@ -35,5 +35,10 @@ func BubbleSort() {
 		i++
 	}
 
-	custom.CustomPrint(time.Second, "\nSorted array: ", arr, "\n")
+	if previous {
+		fmt.Println()
+	}
+
+	custom.CustomPrint(time.Second, "\nSorted array: ", arr)
+	custom.CustomPrint(time.Second, "\nTime Complexity: O(n²)\n")
 }

@@ -20,7 +20,7 @@ func LinearSearch() {
 
 		if numberToSearch == arr[index] {
 			custom.CustomPrint(150*time.Millisecond, " = ", numberToSearch, "\n")
-			custom.CustomPrint(time.Second, "\nNumber found at index ", index, "\n")
+			custom.CustomPrint(time.Second, "\nNumber found at index ", index)
 			break
 		}
 
@@ -30,6 +30,8 @@ func LinearSearch() {
 	}
 
 	if index == len(arr) {
-		custom.CustomPrint(time.Second, "\nNumber not present in array.", "\n")
+		custom.CustomPrint(time.Second, "\nNumber not present in array.")
 	}
+
+	custom.CustomPrint(time.Second, "\nTime Complexity: O(n)\n")
 }
