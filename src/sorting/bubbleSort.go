@@ -7,8 +7,8 @@ import (
 )
 
 func BubbleSort() {
-	var arr = custom.GenerateRandomArray()
-	var previous = false
+	arr := custom.GenerateRandomArray()
+	previous := false
 
 	custom.CustomPrint(time.Second, "Randomly generated array: ", arr, "\n")
 

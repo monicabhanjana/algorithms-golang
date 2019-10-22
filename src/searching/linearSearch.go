@@ -7,7 +7,7 @@ import (
 )
 
 func LinearSearch() {
-	var arr = custom.GenerateRandomArray()
+	arr := custom.GenerateRandomArray()
 
 	custom.CustomPrint(time.Second, "Randomly generated array: ", arr, "\n")
 

@@ -6,7 +6,7 @@ import (
 )
 
 func SelectionSort() {
-	var arr = custom.GenerateRandomArray()
+	arr := custom.GenerateRandomArray()
 
 	custom.CustomPrint(time.Second, "Randomly generated array: ", arr, "\n\n")
 
