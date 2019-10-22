@@ -48,6 +48,7 @@ outerOptionsAgain:
 		case "a":
 			searching.LinearSearch()
 		case "b":
+			searching.BinarySearch()
 		default:
 			custom.CustomPrint(time.Second, "Invalid Choice! Please try again. \n\n")
 			goto innerOptionsAgainSearching
