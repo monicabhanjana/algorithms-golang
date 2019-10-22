@@ -15,7 +15,7 @@ func BubbleSort() {
 		j := 0
 		for j < len(arr)-i-1 {
 			if arr[j] > arr[j+1] {
-				custom.CustomPrint(150*time.Millisecond, "Swapping arr[", j, "] (", arr[j], ") and arr[", j+1, "] (", arr[j+1], ") \n")
+				custom.CustomPrint(150*time.Millisecond, "Swapping arr[", j, "] = ", arr[j], " and arr[", j+1, "] = ", arr[j+1], "\n")
 				arr[j], arr[j+1] = arr[j+1], arr[j]
 			}
 			j++

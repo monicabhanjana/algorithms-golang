@@ -9,10 +9,10 @@ import (
 )
 
 func main() {
-	fmt.Println("Welcome.")
+	fmt.Println("\nWelcome.")
 
 outerOptionsAgain:
-	fmt.Print("Please select an option: \n1) Sorting \n2) Searching \n\nEnter your choice: ")
+	fmt.Print("\nPlease select an option: \n1) Sorting \n2) Searching \n\nEnter your choice: ")
 
 	var option int
 	fmt.Scan(&option)
