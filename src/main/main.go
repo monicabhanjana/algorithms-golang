@@ -9,10 +9,10 @@ import (
 )
 
 func main() {
-	fmt.Println("Welcome.")
+	fmt.Println("\nWelcome.")
 
 outerOptionsAgain:
-	fmt.Print("Please select an option: \n1) Sorting \n2) Searching \n\nEnter your choice: ")
+	fmt.Print("\nPlease select an option: \n1) Sorting \n2) Searching \n\nEnter your choice: ")
 
 	var option int
 	fmt.Scan(&option)
@@ -48,6 +48,7 @@ outerOptionsAgain:
 		case "a":
 			searching.LinearSearch()
 		case "b":
+			searching.BinarySearch()
 		default:
 			custom.CustomPrint(time.Second, "Invalid Choice! Please try again. \n\n")
 			goto innerOptionsAgainSearching
